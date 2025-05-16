@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News – Smart Bilingual Daily</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      margin: 0;
+      direction: ltr;
+    }
+    header, footer {
+      background-color: #1f1f1f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .content {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      color: #1a1a1a;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+    .lang-switch button {
+      margin-left: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      cursor: pointer;
+    }
+    .article {
+      margin-bottom: 1rem;
+    }
+    .rtl {
+      direction: rtl;
+      text-align: right;
+      font-family: "Cairo", sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News</h1>
+    <p>Smart Bilingual Daily Magazine</p>
+  </header>  <div class="content">
+    <div class="lang-switch">
+      <button onclick="showLang('en')">English</button>
+      <button onclick="showLang('ar')">العربية</button>
+    </div><div id="en" class="lang">
+  <div class="section">
+    <h2>Main Headline</h2>
+    <div class="article">
+      <h3>Artificial Intelligence Shapes Global Trends</h3>
+      <p>Experts reveal how AI is reshaping finance, health, and education.</p>
+    </div>
+    <div class="article">
+      <h3>Digital Economies on the Rise</h3>
+      <p>Emerging markets see massive growth through AI and smart logistics.</p>
+    </div>
+  </div>
+</div>
+
+<div id="ar" class="lang rtl" style="display:none">
+  <div class="section">
+    <h2>العناوين الرئيسية</h2>
+    <div class="article">
+      <h3>الذكاء الاصطناعي يشكل الاتجاهات العالمية</h3>
+      <p>يكشف الخبراء كيف يعيد الذكاء الاصطناعي تشكيل التمويل والصحة والتعليم.</p>
+    </div>
+    <div class="article">
+      <h3>الاقتصادات الرقمية في صعود</h3>
+      <p>الأسواق الناشئة تشهد نمواً هائلاً بفضل الذكاء الاصطناعي والخدمات الذكية.</p>
+    </div>
+  </div>
+</div>
+
+  </div>  <footer>
+    <p>&copy; 2025 AI News. All rights reserved.</p>
+  </footer>  <script>
+    function showLang(lang) {
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('ar').style.display = lang === 'ar' ? 'block' : 'none';
+    }
+  </script></body>
+</html>
